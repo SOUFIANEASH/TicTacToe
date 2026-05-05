@@ -1,0 +1,54 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f5f4f0;
+  --surface: #ffffff;
+  --border: #d3d1c7;
+  --border-strong: #888780;
+  --text-primary: #2c2c2a;
+  --text-secondary: #5f5e5a;
+  --text-muted: #b4b2a9;
+  --x-color: #185fa5;
+  --o-color: #a32d2d;
+  --x-bg: #e6f1fb;
+  --o-bg: #fcebeb;
+  --win-x: #b5d4f4;
+  --win-o: #f7c1c1;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--text-secondary);
+  padding: 7px 14px;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background 0.12s, color 0.12s;
+}
+
+button:hover {
+  background: var(--text-primary);
+  color: var(--surface);
+}
+
+button:active {
+  transform: scale(0.97);
+}

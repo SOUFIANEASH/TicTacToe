@@ -1,0 +1,9 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  grid-template-rows: repeat(3, 90px);
+  gap: 0;
+  border: 2px solid var(--text-primary);
+  border-radius: 4px;
+  overflow: hidden;
+}
